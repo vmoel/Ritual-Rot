@@ -1,18 +1,13 @@
-using Unity.Multiplayer.Center.Common.Analytics;
-using Unity.VisualScripting;
-using UnityEditor.VersionControl;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class interaktion : MonoBehaviour
+public class camera : MonoBehaviour
 {
-    public GameObject Interact;
+    public Transform player;
+    public Transform kamera;
     void OnTriggerEnter(Collider other)
-        {
-
-        }
-
+    {
+        ;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
