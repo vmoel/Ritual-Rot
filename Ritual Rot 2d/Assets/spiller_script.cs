@@ -9,7 +9,9 @@ public class spiller_script : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
     private bool isGround;
+    public int facingDirection = 1;
     private Rigidbody2D rb;
+    public Animator anim;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,6 +32,7 @@ public class spiller_script : MonoBehaviour
             rb.linearVelocity = new UnityEngine.Vector2(rb.linearVelocityX, jumpForce);
         }
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -45,4 +48,27 @@ public class spiller_script : MonoBehaviour
             isGround = false;
         } 
     }
+
+    //Bruges til at kalde animationen
+    void FixedUpdate()
+    {
+        float horizontal= Input.GetAxis("Horizontal");
+
+        if(horizontal > 0 && transform.localScale.x < 0|| horizontal < 0 && transform.localScale.x > 0)
+        {
+            Flip();
+        }
+       
+
+        anim.SetFloat("horizontal", Mathf.Abs(horizontal));
+      
+    }
+
+    void Flip()
+    {
+        facingDirection *= -1;
+        transform.localScale = new UnityEngine.Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+
 }
+ 
