@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c6f324ce336b0e46adca72275f15068
+guid: 348bef8ff99cfc44fb8942d47d7109ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 342660493312393976
-    second: pixil-gif-drawing (2)_0
+      213: 1132353737182061090
+    second: "screenshot af intro sk\xE6rm_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixil-gif-drawing (2)_0
+      name: "screenshot af intro sk\xE6rm_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 50
+        width: 760
+        height: 433
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f2027637ef51c400800000000000000
-      internalID: 342660493312393976
+      spriteID: 222a2d879bde6bf00800000000000000
+      internalID: 1132353737182061090
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixil-gif-drawing (2)_0: 342660493312393976
+      "screenshot af intro sk\xE6rm_0": 1132353737182061090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
