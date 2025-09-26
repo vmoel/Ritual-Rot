@@ -48,6 +48,11 @@ public class Knap : MonoBehaviour
     {
         HvisBlock(nuværendeBlock.næsteknapBlock);
     }
+
+    public void Dræb(GameObject gameObject)
+    {
+        Destroy(gameObject);
+    }
     
 
 
