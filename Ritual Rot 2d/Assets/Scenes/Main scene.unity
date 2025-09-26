@@ -393,7 +393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1090655144}
+      - m_Target: {fileID: 1565341884}
         m_TargetAssemblyTypeName: interaktion, Assembly-CSharp
         m_MethodName: "N\xE6steLinje"
         m_Mode: 1
@@ -880,7 +880,6 @@ GameObject:
   - component: {fileID: 1090655148}
   - component: {fileID: 1090655147}
   - component: {fileID: 1090655146}
-  - component: {fileID: 1090655144}
   - component: {fileID: 1090655149}
   m_Layer: 0
   m_Name: Ridder
@@ -889,30 +888,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1090655144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090655143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a199837c4fc5c0c48b8ee998a61fad03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::interaktion
-  DialogPanel: {fileID: 1010670963}
-  DialogText: {fileID: 1156328970}
-  dialog:
-  - "Pas p\xE5!"
-  - Der er farlige sager?
-  - Onde demoner!
-  - En ridder
-  - "og nu skal jeg finde ud af hvordan den her karakter skal tr\xE6kke spilleren
-    v\xE6k :("
-  "n\xE6stek": {fileID: 735119863}
-  ordHastighed: 0.01
-  "N\xE6rspiller": 0
 --- !u!61 &1090655146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -943,7 +918,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -957,7 +932,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 25.88, y: 11}
+  m_Size: {x: 0.4, y: 0.6}
   m_EdgeRadius: 0
 --- !u!212 &1090655147
 SpriteRenderer:
@@ -1008,7 +983,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 6355001415516130594, guid: 5b94c6aae427b7b4f872054202b68bd1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 12, y: 7.76}
@@ -1026,7 +1001,7 @@ Transform:
   m_GameObject: {fileID: 1090655143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.63, y: -1.31, z: 0}
+  m_LocalPosition: {x: 18.84, y: -0.81, z: 0}
   m_LocalScale: {x: 11.233893, y: 14.859221, z: 43.739704}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1403,7 +1378,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 28, y: 9}
+  m_Size: {x: 0.3, y: 0.5}
   m_EdgeRadius: 0
 --- !u!212 &1420597513
 SpriteRenderer:
@@ -1513,7 +1488,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 12.87, y: 11}
+  m_Size: {x: 0.25, y: 0.3}
   m_Direction: 0
 --- !u!95 &1420597517
 Animator:
@@ -1662,9 +1637,8 @@ GameObject:
   - component: {fileID: 1565341883}
   - component: {fileID: 1565341882}
   - component: {fileID: 1565341881}
-  - component: {fileID: 1565341880}
-  - component: {fileID: 1565341879}
   - component: {fileID: 1565341878}
+  - component: {fileID: 1565341884}
   m_Layer: 0
   m_Name: "Hj\xE6lpeperson"
   m_TagString: Untagged
@@ -1694,65 +1668,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!70 &1565341879
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565341877}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 12.87, y: 11}
-  m_Direction: 0
---- !u!114 &1565341880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565341877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a199837c4fc5c0c48b8ee998a61fad03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  DialogPanel: {fileID: 1010670963}
-  DialogText: {fileID: 1156328970}
-  dialog:
-  - Hey, jeg giver dig en lille forklaring om hvad der sker
-  - "Jeg tror m\xE5ske jeg vil programmere ham til at f\xF8lge spilleren"
-  - Lige indtil hullet i broen
-  - "Fordi jeg gider sku ik at finde ud af hvordan man f\xE5r NPC'en til at hope"
-  "n\xE6stek": {fileID: 892042870}
-  ordHastighed: 0.02
-  "N\xE6rspiller": 0
 --- !u!61 &1565341881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1797,7 +1712,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 28, y: 9}
+  m_Size: {x: 0.3, y: 0.3}
   m_EdgeRadius: 0
 --- !u!212 &1565341882
 SpriteRenderer:
@@ -1848,7 +1763,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -7853833309282832939, guid: 64cc2d321f9679a4bb115c9255b8c30a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 12, y: 7.76}
@@ -1866,12 +1781,36 @@ Transform:
   m_GameObject: {fileID: 1565341877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.83, y: -2.05, z: 0}
+  m_LocalPosition: {x: 7.12, y: -1.57, z: 0}
   m_LocalScale: {x: 13.387376, y: 13.926516, z: 56.305126}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565341884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565341877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a199837c4fc5c0c48b8ee998a61fad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::interaktion
+  DialogPanel: {fileID: 1010670963}
+  DialogText: {fileID: 1156328970}
+  dialog:
+  - "Pas p\xE5!"
+  - Der er farlige sager?
+  - Onde demoner!
+  - En ridder
+  - "og nu skal jeg finde ud af hvordan den her karakter skal tr\xE6kke spilleren
+    v\xE6k :("
+  "n\xE6stek": {fileID: 735119863}
+  ordHastighed: 0.01
+  "N\xE6rspiller": 0
 --- !u!1 &1568398259
 GameObject:
   m_ObjectHideFlags: 0
