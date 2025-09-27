@@ -9,10 +9,11 @@ public class Ending1 : MonoBehaviour
 
     historien nuværendeBlock;
 
-    static historien block4 = new historien("Nu er det slut", "",null);
-    static historien block3 = new historien("yubi", "næste", block4);
-    static historien block2 = new historien("Nummer 1 kult entusiast", "næste", block3);
-    static historien block1 = new historien("Du valgte at være kult fan!!", "næste", block2);
+    static historien block5 = new historien("Måske ville det have ændret sig hvis du havde taget det andet valg?", "",null);
+    static historien block4 = new historien("Her blev de sidste zombier fanget og låst inde, efterfulgt af en ny jubilæumsdag som paven havde bestemt sig for at kalde befrielsesdagen.", "næste", block5);
+    static historien block3 = new historien("Efter din beslutning meldte ridderen det til hans øverste som på samme dag tog sit kompagni af riddere og lå i baghold til aftens begyndelse.", "næste", block4);
+    static historien block2 = new historien("De var zombiernes håb, og du var deres, men nu er der intet.", "næste", block3);
+    static historien block1 = new historien("Du valgte at forråde dit eget folk, at forsynde dem til døds.", "næste", block2);
 
 
 

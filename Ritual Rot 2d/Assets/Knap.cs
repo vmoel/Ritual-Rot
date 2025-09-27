@@ -23,10 +23,12 @@ public class Knap : MonoBehaviour
 
     historien nuværendeBlock;
 
-    static historien block4 = new historien("Men jeg føler mig ikke modig nok lige nu til at ændrer det, måske senere.....", "start");
-    static historien block3 = new historien("Altså sådan jeg skal skrive næste hver gang jeg laver en ny dims, hvilket jeg føler nok jeg ikke behøver. Eller okay, jeg ved godt jeg ikke behøver", "næste", block4);
-    static historien block2 = new historien("Jeg følger den her tutorial, men sådan ikke rigtigt. Så jeg tror jeg har fucket den lidt op", "næste", block3);
-    static historien block1 = new historien("Jeg tester en ny programmerings strat når jeg laver det her!", "næste", block2);
+    static historien block6 = new historien("Og du, er nu en af de få der er tilbage.", "start");
+    static historien block5 = new historien("Pavens riddere slagtede næsten alle zombierne.", "næste", block6);
+    static historien block4 = new historien("Huse gik i brand med skrig og sorg imens deres naboer låste dørene.", "næste", block5);
+    static historien block3 = new historien("Zombierne som havde erklæret sig selv som selvstændig fra byens regler og love, i håb om frihed, blev jaget og dræbt.", "næste", block4);
+    static historien block2 = new historien("Tidligere var byen opdelt i religiøse, zombier, og alt imellem, men efter korstoget ændrede dynamikken sig.", "næste", block3);
+    static historien block1 = new historien("Velkommen til verden Kestria, du befinder dig på kanten af landets hovedstad ny Ethania.", "næste", block2);
 
 
 

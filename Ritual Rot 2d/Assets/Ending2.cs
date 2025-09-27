@@ -9,10 +9,11 @@ public class Ending2 : MonoBehaviour
 
     historien nuværendeBlock;
 
-    static historien block4 = new historien("The end", "", null);
-    static historien block3 = new historien("Alt ved kulten er uapallerende i dine øjne", "næste", block4);
-    static historien block2 = new historien("Nummer 1 kult HADER", "næste", block3);
-    static historien block1 = new historien("Du gik imod kulten!", "næste", block2);
+    static historien block5 = new historien("Måske ville det have ændret sig hvis du havde taget det andet valg?", "", null);
+    static historien block4 = new historien("Hvor skal du hen nu? Og hvem kan du stole på? Du føler dig alene og alt virker truende.", "næste", block5);
+    static historien block3 = new historien("Du slap væk med et enkelte par ridser, men befinder dig nu i en del af byen du aldrig har set før.", "næste", block4);
+    static historien block2 = new historien("Efter din beslutning blev du jaget af ridderen, men så stor og farlig han var, så langsom og opbrugt blev han.", "næste", block3);
+    static historien block1 = new historien("Du valgte at beskytte dit folk, at frelse dem endnu en dag til at planlægge deres oprejsning.", "næste", block2);
 
 
 
