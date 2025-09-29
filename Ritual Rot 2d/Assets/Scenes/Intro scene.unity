@@ -348,6 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0c4022dd8399946a273f543439dba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knap
+  begynd: {fileID: 1673665698}
   Hovedtext: {fileID: 1461844607}
   Interknap: {fileID: 1785766861}
 --- !u!1 &619394800
@@ -767,8 +768,8 @@ RectTransform:
   - {fileID: 1268977220}
   - {fileID: 1461844606}
   - {fileID: 835364242}
-  - {fileID: 1673665697}
   - {fileID: 1785766860}
+  - {fileID: 1673665697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

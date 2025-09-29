@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class interaktion : MonoBehaviour
+public class Ridderscript : MonoBehaviour
 {
     public GameObject DialogPanel;
     public Text DialogText;
@@ -19,6 +19,9 @@ public class interaktion : MonoBehaviour
     public float ordHastighed;
 
     public bool Nærspiller;
+    public Button yes;
+    public Button no;
+
 
 
     // Update is called once per frame
@@ -29,7 +32,6 @@ public class interaktion : MonoBehaviour
             if (DialogPanel.activeInHierarchy)
             {
                 ingenT();
-
             }
             else
             {
@@ -42,6 +44,22 @@ public class interaktion : MonoBehaviour
         {
             næstek.SetActive(true);
         }
+
+        if (DialogText.text == dialog[5] && Nærspiller)
+        {
+            yes.gameObject.SetActive(true);
+            no.gameObject.SetActive(true);
+            næstek.gameObject.SetActive(false);
+        }
+        else
+        {
+            no.gameObject.SetActive(false);
+            yes.gameObject.SetActive(false);
+        }
+        //if (dialog[5] && nærspiller)
+        // yes.gameObject.SetActive(true) 
+        //no.gameObject.SetActive(true)
+        // næstekr.gameObject.SetActive(false)
     }
 
     public void ingenT()

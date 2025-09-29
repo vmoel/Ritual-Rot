@@ -7,6 +7,15 @@ public class begynd : MonoBehaviour
     {
         SceneManager.LoadScene("Main Scene");
     }
+    public void Ending1()
+    {
+        SceneManager.LoadScene("Ending1");
+    }
+
+    public void Ending2()
+    {
+        SceneManager.LoadScene("Ending2");
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
