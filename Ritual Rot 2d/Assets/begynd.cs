@@ -14,7 +14,7 @@ public class begynd : MonoBehaviour
 
     public void Ending2()
     {
-        SceneManager.LoadScene("Ending2");
+        SceneManager.LoadScene("Ending 2");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
