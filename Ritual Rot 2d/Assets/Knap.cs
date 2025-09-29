@@ -14,16 +14,16 @@ class historien
         this.næste = næste;
         this.næsteknapBlock = næsteknapBlock;
     }
-    
+
 }
 public class Knap : MonoBehaviour
 {
+    public Button begynd;
     public Text Hovedtext;
     public Button Interknap;
 
     historien nuværendeBlock;
-
-    static historien block6 = new historien("Og du, er nu en af de få der er tilbage.", "start");
+    static historien block6 = new historien("Og du, er nu en af de få der er tilbage.", "", null);
     static historien block5 = new historien("Pavens riddere slagtede næsten alle zombierne.", "næste", block6);
     static historien block4 = new historien("Huse gik i brand med skrig og sorg imens deres naboer låste dørene.", "næste", block5);
     static historien block3 = new historien("Zombierne som havde erklæret sig selv som selvstændig fra byens regler og love, i håb om frihed, blev jaget og dræbt.", "næste", block4);
@@ -35,6 +35,7 @@ public class Knap : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        begynd.gameObject.SetActive(false);
         HvisBlock(block1);
     }
 
@@ -42,14 +43,20 @@ public class Knap : MonoBehaviour
     {
         Hovedtext.text = block.skriften;
         Interknap.GetComponentInChildren<Text>().text = block.næste;
-
         nuværendeBlock = block;
+
+        if (nuværendeBlock == block6)
+        {
+            Destroy(Interknap);
+            begynd.gameObject.SetActive(true);
+        }
     }
 
     public void berørtknap()
     {
         HvisBlock(nuværendeBlock.næsteknapBlock);
     }
+    
 
 
 }
