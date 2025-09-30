@@ -28,7 +28,7 @@ public class Knap : MonoBehaviour
     static historien block4 = new historien("Huse gik i brand med skrig og sorg imens deres naboer låste dørene.", "næste", block5);
     static historien block3 = new historien("Zombierne som havde erklæret sig selv som selvstændig fra byens regler og love, i håb om frihed, blev jaget og dræbt.", "næste", block4);
     static historien block2 = new historien("Tidligere var byen opdelt i religiøse, zombier, og alt imellem, men efter korstoget ændrede dynamikken sig.", "næste", block3);
-    static historien block1 = new historien("Velkommen til verden Kestria, du befinder dig på kanten af landets hovedstad ny Ethania.", "næste", block2);
+    static historien block1 = new historien("Velkommen til verden Kestria, du befinder dig på kanten af landets hovedstad Ny Ethania.", "næste", block2);
 
 
 
